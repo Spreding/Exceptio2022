@@ -1,0 +1,32 @@
+{% block GridCSS %}
+
+    <link rel="stylesheet" href="{{ asset('assets/css/PhotoGrid.css') }}">
+
+{% endblock %}
+
+<div class="Parent">
+    {% for key,Image in Images %}
+        <div class="box{{ key }}">
+            {% if 'mp4' in Image.link %}
+                <video src="{{ asset('/assets/uploads/'~ Image.link ) }}" autoplay loop muted
+                       class="GridIMG {% if Image.size =='horizontal' %}
+				 HorizonalIMG
+			{% else %} VerticalIMG {% endif %}"></video>
+            {% else %}
+                <img src="{{ asset('/assets/uploads/'~ Image.link ) }}" alt="melencolia"
+                     class="GridIMG {% if Image.size =='horizontal' %}
+				 HorizonalIMG
+			{% else %} VerticalIMG {% endif %}">
+            {% endif %}
+            <div class="Legende">
+                {{ Image.publicName }}
+                <br>
+                <br>
+                <br>
+                <Span class="SousLegende">
+					{{ Image.description }}
+				</Span>
+            </div>
+        </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,239 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ConfianceController!{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/css/Confiance.css') }}">
+{% endblock %}
+{% block body %}
+    <div class="PhraseConfiance">
+        ILS NOUS ONT FAIT CONFIANCE
+
+    </div>
+
+    <div class="ClientListWrapper">
+
+
+        <div class="Col" id="Colonne1">
+            <span class="Bold">A</span> <br> <br>
+            {% for client in clients %}
+                {% if client.name|first|lower == 'a' %}
+                    <a href="{{ client.linkWeb }}" target="blank">{{ client.name }}</a> <br>
+                {% endif %}
+            {% endfor %}
+            <br>
+            <br>
+            <span class="Bold">B</span> <br><br>
+            {% for client in clients %}
+                {% if client.name|first|lower == 'b' %}
+                    <a href="{{ client.linkWeb }}">{{ client.name }}</a> <br>
+                {% endif %}
+            {% endfor %}
+            <br>
+            <br>
+            <span class="Bold">C</span> <br><br>
+            {% for client in clients %}
+                {% if client.name|first|lower == 'c' %}
+                    <a href="{{ client.linkWeb }}">{{ client.name }}</a> <br>
+                {% endif %}
+            {% endfor %}
+            <br>
+            <br>
+            <span class="Bold">D</span> <br><br>
+            {% for client in clients %}
+                {% if client.name|first|lower == 'd' %}
+                    <a href="{{ client.linkWeb }}">{{ client.name }}</a> <br>
+                {% endif %}
+            {% endfor %}
+            <br>
+            <br>
+            <span class="Bold">E</span> <br><br>
+            {% for client in clients %}
+                {% if client.name|first|lower == 'e' %}
+                    <a href="{{ client.linkWeb }}">{{ client.name }}</a> <br>
+                {% endif %}
+            {% endfor %}
+            <br>
+            <br>
+            <span class="Bold">F</span> <br><br>
+            {% for client in clients %}
+                {% if client.name|first|lower == 'f' %}
+                    <a href="{{ client.linkWeb }}">{{ client.name }}</a> <br>
+                {% endif %}
+            {% endfor %}
+            <br>
+            <br>
+            <span class="Bold">G</span> <br><br>
+            {% for client in clients %}
+                {% if client.name|first|lower == 'g' %}
+                    <a href="{{ client.linkWeb }}">{{ client.name }}</a> <br>
+                {% endif %}
+            {% endfor %}
+            <br>
+            <br>
+            <span class="Bold">H</span> <br><br>
+            {% for client in clients %}
+                {% if client.name|first|lower == 'h' %}
+                    <a href="{{ client.linkWeb }}">{{ client.name }}</a> <br>
+                {% endif %}
+            {% endfor %}
+
+        </div>
+
+        <div class="Col" id="Colonne2">
+            <span class="Bold">I</span> <br><br>
+            {% for client in clients %}
+                {% if client.name|first|lower == 'i' %}
+                    <a href="{{ client.linkWeb }}">{{ client.name }}</a> <br>
+                {% endif %}
+            {% endfor %}
+            <br>
+            <br>
+            <span class="Bold">J</span> <br><br>
+            {% for client in clients %}
+                {% if client.name|first|lower == 'j' %}
+                    <a href="{{ client.linkWeb }}">{{ client.name }}</a> <br>
+                {% endif %}
+            {% endfor %}
+            <br>
+            <br>
+
+            <span class="Bold">K</span> <br><br>
+            {% for client in clients %}
+                {% if client.name|first|lower == 'k' %}
+                    <a href="{{ client.linkWeb }}">{{ client.name }}</a> <br>
+                {% endif %}
+            {% endfor %}
+            <br>
+            <br>
+
+            <span class="Bold">L</span> <br><br>
+            {% for client in clients %}
+                {% if client.name|first|lower == 'l' %}
+                    <a href="{{ client.linkWeb }}">{{ client.name }}</a> <br>
+                {% endif %}
+            {% endfor %}
+            <br>
+            <br>
+            <span class="Bold">M</span> <br><br>
+            {% for client in clients %}
+                {% if client.name|first|lower == 'm' %}
+                    <a href="{{ client.linkWeb }}">{{ client.name }}</a> <br>
+                {% endif %}
+            {% endfor %}
+            <br>
+            <br>
+            <span class="Bold">N</span> <br><br>
+            {% for client in clients %}
+                {% if client.name|first|lower == 'n' %}
+                    <a href="{{ client.linkWeb }}">{{ client.name }}</a> <br>
+                {% endif %}
+            {% endfor %}
+            <br>
+            <br>
+            <span class="Bold">O</span> <br><br>
+            {% for client in clients %}
+                {% if client.name|first|lower == 'o' %}
+                    <a href="{{ client.linkWeb }}">{{ client.name }}</a> <br>
+                {% endif %}
+            {% endfor %}
+            <br>
+            <br>
+            <span class="Bold">P</span> <br><br>
+            {% for client in clients %}
+                {% if client.name|first|lower == 'p' %}
+                    <a href="{{ client.linkWeb }}">{{ client.name }}</a> <br>
+                {% endif %}
+            {% endfor %}
+            <br>
+            <br>
+            <span class="Bold">Q</span> <br><br>
+            {% for client in clients %}
+                {% if client.name|first|lower == 'q' %}
+                    <a href="{{ client.linkWeb }}">{{ client.name }}</a> <br>
+                {% endif %}
+            {% endfor %}
+
+        </div>
+
+        <div class="Col" id="Colonne3">
+            <span class="Bold">R</span> <br><br>
+            {% for client in clients %}
+                {% if client.name|first|lower == 'r' %}
+                    <a href="{{ client.linkWeb }}">{{ client.name }}</a> <br>
+                {% endif %}
+            {% endfor %}
+            <br>
+            <br>
+            <span class="Bold">S</span> <br><br>
+            {% for client in clients %}
+                {% if client.name|first|lower == 's' %}
+                    <a href="{{ client.linkWeb }}">{{ client.name }}</a> <br>
+                {% endif %}
+            {% endfor %}
+            <br>
+            <br>
+
+            <span class="Bold">T</span> <br><br>
+            {% for client in clients %}
+                {% if client.name|first|lower == 't' %}
+                    <a href="{{ client.linkWeb }}">{{ client.name }}</a> <br>
+                {% endif %}
+            {% endfor %}
+            <br>
+            <br>
+
+            <span class="Bold">U</span> <br><br>
+            {% for client in clients %}
+                {% if client.name|first|lower == 'u' %}
+                    <a href="{{ client.linkWeb }}">{{ client.name }}</a> <br>
+                {% endif %}
+            {% endfor %}
+            <br>
+            <br>
+            <span class="Bold">V</span> <br><br>
+            {% for client in clients %}
+                {% if client.name|first|lower == 'v' %}
+                    <a href="{{ client.linkWeb }}">{{ client.name }}</a> <br>
+                {% endif %}
+            {% endfor %}
+            <br>
+            <br>
+
+            <span class="Bold">W</span> <br><br>
+            {% for client in clients %}
+                {% if client.name|first|lower == 'w' %}
+                    <a href="{{ client.linkWeb }}">{{ client.name }}</a> <br>
+                {% endif %}
+            {% endfor %}
+            <br>
+            <br>
+
+            <span class="Bold">X</span> <br><br>
+            {% for client in clients %}
+                {% if client.name|first|lower == 'x' %}
+                    <a href="{{ client.linkWeb }}">{{ client.name }}</a> <br>
+                {% endif %}
+            {% endfor %}
+            <br>
+            <br>
+
+            <span class="Bold">Y</span> <br><br>
+            {% for client in clients %}
+                {% if client.name|first|lower == 'y' %}
+                    <a href="{{ client.linkWeb }}">{{ client.name }}</a> <br>
+                {% endif %}
+            {% endfor %}
+            <br>
+            <br>
+
+            <span class="Bold">Z</span> <br><br>
+            {% for client in clients %}
+                {% if client.name|first|lower == 'z' %}
+                    <a href="{{ client.linkWeb }}">{{ client.name }}</a> <br>
+                {% endif %} 
+            {% endfor %}
+            <br>
+
+        </div>
+    </div>
+{% endblock %}

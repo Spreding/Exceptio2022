@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Univers LT Std';
+    src: url('UniversLTStd-CnObl.woff2') format('woff2'),
+        url('UniversLTStd-CnObl.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univers LT Std';
+    src: url('UniversLTStd-LightCnObl.woff2') format('woff2'),
+        url('UniversLTStd-LightCnObl.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univers LT Std';
+    src: url('UniversLTStd-BoldCn.woff2') format('woff2'),
+        url('UniversLTStd-BoldCn.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univers LT Std';
+    src: url('UniversLTStd-LightCn.woff2') format('woff2'),
+        url('UniversLTStd-LightCn.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univers LT Std';
+    src: url('UniversLTStd-Cn.woff2') format('woff2'),
+        url('UniversLTStd-Cn.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Univers LT Std';
+    src: url('UniversLTStd-BoldCnObl.woff2') format('woff2'),
+        url('UniversLTStd-BoldCnObl.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+

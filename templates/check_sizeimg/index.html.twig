@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello CheckSizeimgController!{% endblock %}
+
+{% block body %}
+    {% for img in ImagesVertical %}
+        <p>{{ img.name}}</p>
+        <p>{{ img.link }}</p>
+        <p>{{ img.size }}</p><br>
+    {% endfor %}
+    <div style="width: 100%;height: 100px;background-color: #0c4a6e;"></div>
+    {% for img in ImagesHorizontal %}
+        <p>{{ img.name}}</p>
+        <p>{{ img.link }}</p>
+        <p>{{ img.size }}</p><br>
+    {% endfor %}
+    <br><br>
+    <div style="width: 100%;height: 100px;background-color: #4b5563;"></div>
+    {% for img in ImagesSquare %}
+        <p>{{ img.name}}</p>
+        <p>{{ img.link }}</p>
+        <p>{{ img.size }}</p><br>
+    {% endfor %}
+{% endblock %}

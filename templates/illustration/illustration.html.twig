@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello RealisationController!{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/css/Conseil.css') }}">
+{% endblock %}
+
+{% block body %}
+
+    <div class="ConseilMainText">
+
+        <span class="ConseilTitle">ILLUSTRATION</span> <br><br>
+
+Dessin à la main, à la mine de plomb ou à la plume, peinture toutes techniques, conception sur tablette numérique, le trait et la couleur constituent le quotidien du studio. L’inspiration est associée à la sensibilité même de chaque projet, à dominante historique ou en création complète.
+Régulièrement, EXCEPTIO investit le territoire de la restauration d’images, pour faire renaître les identités passées en associant dessin, recherches typographiques, calligraphie et maîtrise des techniques d’impression, des plus anciennes au plus innovantes.
+
+    </div>
+
+    	{% include "PhotoGrid/Index.html.twig" %}
+
+{% endblock %}

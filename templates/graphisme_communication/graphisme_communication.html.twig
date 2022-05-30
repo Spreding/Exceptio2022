@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello RealisationController!{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/css/Conseil.css') }}">
+{% endblock %}
+
+{% block body %}
+
+    <div class="ConseilMainText">
+
+        <span class="ConseilTitle">GRAPHISME / COMMUNICATION</span> <br><br>
+
+Constitué de quatre entités aussi individuelles que complémentaires, EXCEPTIO déploie une polyvalence complète qui lui assure à la fois maîtrise et puissance, du digital à l’imprimé.
+L’approche du studio est patrimoniale et vivante. Elle conjugue exploration historique, étude des enjeux et compréhension des acteurs, pour que toute création allie sens et profondeur.
+
+    </div>
+
+    	{% include "PhotoGrid/Index.html.twig" %}
+
+{% endblock %}

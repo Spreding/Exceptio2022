@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+}
+.BlackDiv{
+    width: 60%;
+    margin-top: 1px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    text-align:  center;
+    padding-left:20%;
+    padding-right: 20%;
+    padding-bottom: 25px;
+    padding-top: 25px;
+
+}
+.BlackParagraph{
+    padding-top: 25px;
+    margin-bottom: 25px;
+}
+
+.padding{
+    margin-bottom: 40px;
+}
+
+
+.ekip{
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.ekip_pic{
+  width: 50%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.Paragraph{
+    width: 50%;
+    margin-left: 25%;
+    margin-bottom: 25px;
+    padding-top: 25px;
+}
+
+.Naming{
+  padding-top: 25px;
+  margin-bottom: 25px;
+}
+
+.Studiotitle{
+    padding-top: 25px;
+}
+
+.esperluette{
+    color: grey;
+    font-size: 40px;
+    margin-bottom: 25px;
+    padding-top: 25px;
+}
+
+.Melencolia_holder{
+    font-size: 20px;
+    width: 100%;
+    background-color: black;
+    padding-top: 25px;
+    color: white;
+    text-align: center;
+}
+
+.Gravure{
+    width: 50%;
+    margin-top: 25px;
+   
+}
+
+.legende{
+    width: 50%;
+    margin-left: 25%;
+    text-align: right;
+    padding-top: 30px;
+    margin-bottom: 50px;
+
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('assets/css/Header.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/Footer.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/Fonts.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    {% block stylesheets %}
+    {% endblock %}
+    {% block GridCSS %}
+    {% endblock %}
+    {% block javascripts %}
+    {% endblock %}
+</head>
+<body id="Body">
+<div class="Wrapper" id="HeaderWrapper">
+    <div class="Title" id="Title">
+        <a href="{{ path('app_accueil') }}">
+            EXCEPTIO
+        </a>
+        <a href="{{ path('app_esperluette') }}">&</a>
+
+    </div>
+
+
+    <div class="Links" id="Menu">
+
+        <a href="{{ path('app_realisation') }}">
+            &nbsp;&nbsp;réalisations&nbsp;
+        </a>
+
+        <br class="HeaderBR">
+
+        <a href="{{ path('app_studio') }}">
+            &nbsp; studio&nbsp;
+        </a>
+
+        <br class="HeaderBR">
+
+        <a href="{{ path('app_contact') }}">
+            &nbsp; contact&nbsp;
+        </a>
+
+        <br class="HeaderBR">
+
+    </div>
+
+
+    <div class="SocialContainer" id="SocialMenu">
+
+        <div class="Social">
+            <a href="https://www.linkedin.com/company/exceptio-studio/">
+
+                <img src="{{ asset('assets/img/Linkedin_Icon.png') }}" alt="linkedin" class="SocialIcon">
+
+            </a>
+
+            <a href="https://www.instagram.com/exceptio.studio/?hl=fr">
+
+                <img src="{{ asset('assets/img/Instagram_Icon.png') }}" alt="instagram" class="SocialIcon">
+
+            </a>
+
+            <a href="https://www.facebook.com/exceptio.studio/">
+
+                <img src="{{ asset('assets/img/Facebook_icon.png') }}" alt="facebook" class="SocialIcon">
+
+            </a>
+
+
+        </div>
+    </div>
+
+    <div class="Phrase roboto">
+        heureux sont les félés car ils laissent passer la lumière & heureux sont les félés car ils laissent passer la
+        lumière & heureux sont les félés car ils laissent passer la lumière & heureux sont les félés car ils laissent
+        passer la lumière
+    </div>
+
+
+</div>
+
+
+
+{% block body %}{% endblock %}
+
+<div class="FooterContainer">
+
+
+    <div class="SocialBar">
+
+        <div class="Titre_Footer">
+            EXCEPTIO &
+        </div>
+        <a href="https://www.linkedin.com/company/exceptio-studio/" target="blank">
+            <img src="{{ asset('assets/img/Linkedin_Icon.png') }}" alt="" class="SocialIcon_Footer">
+        </a>
+        <a href="https://www.instagram.com/exceptio.studio/?hl=fr" target="blank">
+            <img src="{{ asset('assets/img/Instagram_Icon.png') }}" alt="" class="SocialIcon_Footer">
+        </a>
+        <a href="https://www.facebook.com/exceptio.studio/" target="blank">
+            <img src="{{ asset('assets/img/Facebook_icon.png') }}" alt="" class="SocialIcon_Footer">
+        </a>
+
+    </div>
+
+</div>
+<script src="{{ asset('assets/js/Header.js') }}"></script>
+</body>
+</html>

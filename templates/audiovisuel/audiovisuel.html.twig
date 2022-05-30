@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello RealisationController!{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/css/Conseil.css') }}">
+{% endblock %}
+
+{% block body %}
+
+    <div class="ConseilMainText">
+
+        <span class="ConseilTitle">AUDIOVISUEL</span> <br><br>
+
+Précision et sensibilité, immobiles ou en mouvement.
+Au service d’une image pensée pour définir des territoires d’identité, EXCEPTIO conçoit scénarios, lumières et rythmes, de la photographie à la prise de vues vidéo et au montage de films. 
+Plus spécifiquement, les dessins créés par le studio peuvent prendre vie, pour animer un espace, un site, une publication. 
+
+    </div>
+
+
+    	{% include "PhotoGrid/Index.html.twig" %}
+
+{% endblock %}

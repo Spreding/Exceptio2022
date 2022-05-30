@@ -1,0 +1,308 @@
+.Parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(9, 33.33vw);
+
+}
+
+
+.box1 {
+    grid-area: 1 / 1 / 3 / 2;
+    position: relative;
+    background-color: black;
+
+
+}
+
+.box1:hover > .Legende {
+
+    opacity: 100%;
+    transition: all 0.5s;
+}
+
+.box1:hover > .GridIMG {
+    display: block;
+    opacity: 70%;
+    transition: all 0.5s;
+
+
+}
+
+.box2 {
+    grid-area: 1 / 2 / 2 / 4;
+    position: relative;
+    background-color: black;
+}
+
+.box2:hover > .Legende {
+
+    opacity: 100%;
+    transition: all 0.5s;
+}
+
+.box2:hover > .GridIMG {
+    display: block;
+    opacity: 70%;
+    transition: all 0.5s;
+
+
+}
+
+.box3 {
+    grid-area: 2/ 2 / 2 / 2;
+    position: relative;
+    background-color: black;
+}
+
+.box3:hover > .Legende {
+
+    opacity: 100%;
+    transition: all 0.5s;
+}
+
+.box3:hover > .GridIMG {
+    display: block;
+    opacity: 70%;
+    transition: all 0.5s;
+
+
+}
+
+.box4 {
+    grid-area: 2/ 3 / 4 / 4;
+    position: relative;
+    background-color: black;
+}
+
+.box4:hover > .Legende {
+
+    opacity: 100%;
+    transition: all 0.5s;
+}
+
+.box4:hover > .GridIMG {
+    display: block;
+    opacity: 70%;
+    transition: all 0.5s;
+
+
+}
+
+.box5 {
+    grid-area: 3/ 1 / 5/3;
+    position: relative;
+    background-color: black;
+}
+
+.box5:hover > .Legende {
+
+    opacity: 100%;
+    transition: all 0.5s;
+}
+
+.box5:hover > .GridIMG {
+    display: block;
+    opacity: 70%;
+    transition: all 0.5s;
+
+
+}
+
+.box6 {
+    grid-area: 4/ 3 / 5 / 4;
+    position: relative;
+    background-color: black;
+}
+
+.box6:hover > .Legende {
+
+    opacity: 100%;
+    transition: all 0.5s;
+}
+
+.box6:hover > .GridIMG {
+    display: block;
+    opacity: 70%;
+    transition: all 0.5s;
+
+
+}
+
+.box7 {
+    grid-area: 5/ 1 / 6 / 4;
+    position: relative;
+    background-color: black;
+}
+
+.box7:hover > .Legende {
+
+    opacity: 100%;
+    transition: all 0.5s;
+}
+
+.box7:hover > .GridIMG {
+    display: block;
+    opacity: 70%;
+    transition: all 0.5s;
+
+
+}
+
+.box8 {
+    grid-area: 6/ 1 / 7 / 3;
+    position: relative;
+    background-color: black;
+}
+
+.box8:hover > .Legende {
+
+    opacity: 100%;
+    transition: all 0.5s;
+}
+
+.box8:hover > .GridIMG {
+    display: block;
+    opacity: 70%;
+    transition: all 0.5s;
+
+
+}
+
+.box9 {
+    grid-area: 6/ 3 / 7 / 4;
+    position: relative;
+    background-color: black;
+}
+
+.box9:hover > .Legende {
+
+    opacity: 100%;
+    transition: all 0.5s;
+}
+
+.box9:hover > .GridIMG {
+    display: block;
+    opacity: 70%;
+    transition: all 0.5s;
+
+
+}
+
+.box10 {
+    grid-area: 7/ 1 / 8 / 2;
+    position: relative;
+    background-color: black;
+}
+
+.box10:hover > .Legende {
+
+    opacity: 100%;
+    transition: all 0.5s;
+}
+
+.box10:hover > .GridIMG {
+    display: block;
+    opacity: 70%;
+    transition: all 0.5s;
+
+
+}
+
+.box11 {
+    grid-area: 8/ 1 / 9 / 2;
+    position: relative;
+    background-color: black;
+}
+
+.box11:hover > .Legende {
+
+    opacity: 100%;
+    transition: all 0.5s;
+}
+
+.box11:hover > .GridIMG {
+    display: block;
+    opacity: 70%;
+    transition: all 0.5s;
+
+
+}
+
+.box12 {
+    grid-area: 7/ 2 / 9 / 4;
+    position: relative;
+    background-color: black;
+}
+
+.box12:hover > .Legende {
+
+    opacity: 100%;
+    transition: all 0.5s;
+}
+
+.box12:hover > .GridIMG {
+    display: block;
+    opacity: 70%;
+    transition: all 0.5s;
+}
+
+.box13 {
+    grid-area: 9/ 1 / 10 / 4;
+    position: relative;
+    background-color: black;
+}
+
+.box13:hover > .Legende {
+
+    opacity: 100%;
+    transition: all 0.5s;
+}
+
+.box13:hover > .GridIMG {
+    display: block;
+    opacity: 70%;
+    transition: all 0.5s;
+
+
+}
+
+.Legende {
+
+    width: 80%;
+    font-size: 1vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, 0%);
+    color: white;
+    opacity: 0%;
+    transition: all 0.5s;
+}
+
+.SousLegende {
+
+}
+
+.GridIMG{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    opacity: 100%;
+    transition: all 0.5s;
+}
+
+.VerticalIMG{
+   height: 100%;
+}
+
+.HorizonalIMG{
+   width: 100%;
+}
+
+
+
+
+    

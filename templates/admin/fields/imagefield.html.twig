@@ -1,0 +1,10 @@
+{# templates/admin/form.html.twig #}
+{% block ea_fileupload_widget %}
+    <script>
+        var fileInput = document.querySelector('#{{ form.file.vars.id }}');
+        var labelText = fileInput.nextElementSibling.innerText;
+        if( '' !== labelText ) {
+            fileInput.removeAttribute('required');
+        }
+    </script>
+{% endblock %}
