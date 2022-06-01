@@ -4,3 +4,15 @@
     padding-top: 150px;
     min-height: 80vh;
 }
+
+.Contactlink{
+    color: #878787;
+}
+
+.Contactlink:hover{
+    color: black;
+}
+
+.black{
+    color: black;
+}

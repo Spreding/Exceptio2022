@@ -27,7 +27,7 @@ class DashboardController extends AbstractDashboardController
     public function configureDashboard(): Dashboard
     {
         return Dashboard::new()
-            ->renderSidebarMinimized(true)
+            ->renderSidebarMinimized(false)
             ->setTitle('Exceptio2022 - Admin');
 
     }

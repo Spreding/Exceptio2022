@@ -19,6 +19,9 @@ class Client
     #[ORM\Column(type: 'string', length: 255)]
     private $linkWeb;
 
+    #[ORM\Column(type: 'string', length: 255)]
+    private $sortingName;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -31,6 +34,7 @@ class Client
 
     public function setName(string $Name): self
     {
+        
         $this->Name = $Name;
 
         return $this;
@@ -44,6 +48,18 @@ class Client
     public function setLinkWeb(string $linkWeb): self
     {
         $this->linkWeb = $linkWeb;
+
+        return $this;
+    }
+
+    public function getSortingName(): ?string
+    {
+        return $this->sortingName;
+    }
+
+    public function setSortingName(string $sortingName): self
+    {
+        $this->sortingName = $sortingName;
 
         return $this;
     }

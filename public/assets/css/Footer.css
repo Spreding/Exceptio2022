@@ -5,16 +5,36 @@
 }
 
 .SocialIcon_Footer{
-    padding-top:40px;
-    padding-bottom: 40px;
+    padding-top:20px;
+    padding-bottom: 20px;
     width: 30px;
     margin-left: 5px;
     margin-right: 5px;
     
 }
 
-.Titre_Footer{
-    color: white;
-    margin-top: 40px;
-    font-size: 30px;
+.Footer_Title {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    margin-top: 30px;
+    padding-bottom: 0px;
+    height: 25px;
+    position: relative;
+    transform: translate(7%,0);
+}
+
+.Footer_ExceptioLogo{
+    
+    float: left;
+    height: 25px;
+    
+}
+
+.Footer_Espeluette{
+   margin-left: 10px;
+    height: 25px;
+    float: left;
+    
 }

@@ -36,6 +36,9 @@ class ImageCrudController extends AbstractCrudController
             TextField::new('size',)->hideOnForm(),
             TextField::new('size','Size : (horizontal / vertical / square)')->onlyOnForms(),
 
+            // testathibo
+            TextField::new('Title'),
+
         ];
     }
 

@@ -11,10 +11,14 @@
             <div class="formbg">
                 <div class="formbg-inner padding-horizontal--48">
                     <span class="padding-bottom--15">Sign in to your account</span>
-                    <form id="stripe-login">
+                    <form id="stripe-login" method="POST">
+
+                        {% if error %}
+                            <div class="alert alert-danger">{{error.messageKey|trans(error.messageData, 'security')}}</div>
+                        {% endif %}
                         <div class="field padding-bottom--24">
-                            <label for="email">Email</label>
-                            <input type="email" name="email">
+                            <label for="username">Username</label>
+                            <input type="username" name="username">
                         </div>
                         <div class="field padding-bottom--24">
                             <div class="grid--50-50">
@@ -25,6 +29,9 @@
                             </div>
                             <input type="password" name="password">
                         </div>
+
+
+                        <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
                         <div class="field padding-bottom--24">
                             <input type="submit" name="submit" value="Continue">
                         </div>

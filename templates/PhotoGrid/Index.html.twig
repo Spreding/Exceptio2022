@@ -18,14 +18,18 @@
 				 HorizonalIMG
 			{% else %} VerticalIMG {% endif %}">
             {% endif %}
-            <div class="Legende">
-                {{ Image.publicName }}
+            <div class="Legende font_universBold">
+            <span>
+                {# {{Image.Title }} #}
+                {{ Image.Title }}
+             
+            </span>
                 <br>
                 <br>
                 <br>
-                <Span class="SousLegende">
+                <span class="SousLegende font_UniversClassic">
 					{{ Image.description }}
-				</Span>
+                </span>
             </div>
         </div>
     {% endfor %}

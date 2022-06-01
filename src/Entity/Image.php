@@ -30,8 +30,9 @@ class Image
     #[ORM\Column(type: 'string', length: 500)]
     private $description;
 
+
     #[ORM\Column(type: 'string', length: 255)]
-    private $publicName;
+    private $Title;
 
     public function __construct()
     {
@@ -118,16 +119,17 @@ class Image
         return $this;
     }
 
-    public function getPublicName(): ?string
+    public function getTitle(): ?string
     {
-        return $this->publicName;
+        return $this->Title;
     }
 
-    public function setPublicName(string $publicName): self
+    public function setTitle(string $Title): self
     {
-        $this->publicName = $publicName;
+        $this->Title = $Title;
 
         return $this;
     }
+
 
 }

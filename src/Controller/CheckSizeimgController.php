@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Controller;
-
 use App\Entity\Image;
+use App\Entity\PhraseAccueil;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
@@ -21,6 +21,9 @@ class CheckSizeimgController extends AbstractController
     #[Route('/check_sizeimg', name: 'app_check_sizeimg')]
     public function index(): Response
     {
+        $phrasearray = $this->entityManager->getRepository(PhraseAccueil::class)->findAll();
+
+        $selectedphrase = $phrasearray[array_rand($phrasearray)];
 
         $ImagesVertical = $this->entityManager->getRepository(Image::class)->findBy(array('size'=>'vertical'));
         $ImagesHorizontal = $this->entityManager->getRepository(Image::class)->findBy(array('size'=>'horizontal'));
@@ -31,6 +34,7 @@ class CheckSizeimgController extends AbstractController
             'ImagesVertical' => $ImagesVertical,
             'ImagesHorizontal' => $ImagesHorizontal,
             'v' => $ImagesSquare,
+            'Phrase' => $selectedphrase,
 
         ]);
     }
